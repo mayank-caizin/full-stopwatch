@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch">
+            <h1 id="name" class="name">STOPWATCH</h1>
+            <div id="timer" class="timer">
+                <span class="time">00:00:00.00</span>
+            </div>
+
+            <div id="controls" class="controls">
+                <button class="toggle-btn btn">
+                    <img class="toggle" src="icons/play-button.svg" />
+                </button>
+
+                <button class="reset-btn btn">
+                    <img class="reset" src="icons/reset-button.svg" />
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
