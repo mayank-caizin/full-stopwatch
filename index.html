@@ -19,9 +19,8 @@
 <body>
     <div class="container">
         <div class="stopwatch">
-            <h1 id="name" class="name">STOPWATCH</h1>
             <div id="timer" class="timer">
-                <span class="time">00:00:00.00</span>
+                <span class="time">00:00:00:00</span>
             </div>
 
             <div id="controls" class="controls">
@@ -29,10 +28,17 @@
                     <img class="toggle" src="icons/play-button.svg" />
                 </button>
 
+                <button class="lap-btn btn">
+                    <img class="lap" src="icons/lap-button.svg" />
+                </button>
+
                 <button class="reset-btn btn">
                     <img class="reset" src="icons/reset-button.svg" />
                 </button>
             </div>
+        </div>
+        <hr width="80%">
+        <div id="laps-info">
         </div>
     </div>
     <script type="module" src="index.js"></script>

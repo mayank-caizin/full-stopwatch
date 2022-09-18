@@ -25,11 +25,10 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2em;
-  /* border: 2px solid; */
 }
 
 .stopwatch > * {
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
 }
 
 .name {
@@ -43,44 +42,52 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 17em;
-  width: 17em;
-
-  border: 2px solid;
-  border-radius: 50%;
 }
 
 .time {
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 4em;
 }
 
 .controls {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.toggle-btn {
-  background: #4cc2ff;
-  border: none;
-  border-radius: 50%;
-}
-
-.reset-btn {
-  background: transparent;
-  border: none;
+.controls .btn {
+  margin: 10px;
 }
 
 .btn {
+  background: transparent;
+  border: 2px solid white;
   cursor: pointer;
   width: 5em;
   height: 5em;
-  /* margin: 5px; */
+  border-radius: 50%;
 }
 
-.toggle {
-  width: 3em;
-  height: 3em;
+.toggle-btn {
+  border: 2px solid #4cc2ff;
+  background: #4cc2ff;
+}
+
+button > img {
+  width: 2em;
+  height: 2em;
+}
+
+#laps-info {
+  padding: 1rem;
+}
+
+#laps-info p {
+  margin-bottom: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 200;
+}
+
+.gold {
+  color: #f2c94c;
 }
